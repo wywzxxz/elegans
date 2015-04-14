@@ -1470,7 +1470,6 @@ define('utils/range',[],function(){
 		if 		(typeof(range1.min)=="undefined") b=range2.min;
 		else if	(typeof(range2.min)=="undefined") b=range1.min;
 		else b=Math.max(range1.min, range2.min);
-		console.log("extend",range1, range2,new Range(a,b));
 		return new Range(a,b);
 		
     };
@@ -1558,8 +1557,7 @@ define('components/stage',[
 	    axis_labels:this.options.axis_labels,
 	    mode: this.options.space_mode,
 	    grid: this.options.grid
-	});
-	console.log("this.data_ranges",this.data_ranges);
+	});	
 	this.world.addMesh(this.space.getMeshes());
         for(var i=0;i<this.charts.length;i++){
             var chart=this.charts[i];
