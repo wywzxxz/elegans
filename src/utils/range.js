@@ -28,7 +28,6 @@ define([],function(){
 		if 		(typeof(range1.min)=="undefined") b=range2.min;
 		else if	(typeof(range2.min)=="undefined") b=range1.min;
 		else b=Math.max(range1.min, range2.min);
-		console.log("extend",range1, range2,new Range(a,b));
 		return new Range(a,b);
 		
     };

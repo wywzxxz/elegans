@@ -78,8 +78,7 @@ define([
 	    axis_labels:this.options.axis_labels,
 	    mode: this.options.space_mode,
 	    grid: this.options.grid
-	});
-	console.log("this.data_ranges",this.data_ranges);
+	});	
 	this.world.addMesh(this.space.getMeshes());
         for(var i=0;i<this.charts.length;i++){
             var chart=this.charts[i];
